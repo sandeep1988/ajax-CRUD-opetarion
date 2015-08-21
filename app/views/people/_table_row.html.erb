@@ -1,0 +1,7 @@
+<tr id="person_<%= person.id %>">
+	<td><%= person.first_name %></td>
+	<td><%= person.last_name %></td>
+	<td><%= link_to 'Show', person %></td>
+	<td><%= link_to 'Edit', edit_person_path(person), :remote => true , :id => "edit_person_link" %></td>
+	<td><%= link_to 'Destroy', person, :remote => true, method: :delete, class: "btn btn-danger"%></td>
+</tr>

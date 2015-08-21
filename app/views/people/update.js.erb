@@ -1,0 +1,3 @@
+$('#person_<%= @person.id %>').replaceWith('<%= j render("table_row", :person => @person) %>');
+$('#person_first_name').val('');
+$('#person_last_name').val('');
